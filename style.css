@@ -1,0 +1,147 @@
+
+body{
+    margin: 0px;
+    font-family: 'Francois One', sans-serif;
+    background-color:lightsteelblue;
+}
+
+@media(max-width: 800px){
+    body{
+        font-size: 70%;
+    } 
+}
+
+/*-----HEADER-----*/
+
+header{
+    height: 180px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bokeh-1780209_960_720.png);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    border-bottom: 2px solid black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#title{
+    display: flex;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 12px 12px rgba(0, 0, 0, 2.5);
+}
+
+@media(max-width: 800px){
+    #title{
+        font-size: 20px;
+    } 
+}
+
+/*-----SECTION-----*/
+
+section{
+    height: 750px;
+    background-color:lightsteelblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#question{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color:lightsteelblue;
+}
+
+#question h3{
+    text-shadow: 0px 12px 12px rgba(0, 0, 0, 0.5);
+}
+
+#question h4{
+    text-shadow: 0px 12px 12px rgba(0, 0, 0, 0.5);
+}
+
+#content, #s_button{
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+#gif-view{
+    margin: 5px;
+    height: 550px;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.gif{
+    margin: 5px;
+    height: 120px;
+    width: 220px;
+    border-radius: 10px;
+}
+
+@media(max-width: 800px){
+    .gif{
+        margin: 1.5px;
+        height: 80px;
+        width: 160px;
+    } 
+}
+
+.gif:hover{
+    transform: scale(0.9);
+    box-shadow: 0px 15px 12px rgba(0, 0, 0, 0.5);
+}
+
+.gif.hidden:hover{
+    transform: none;
+    box-shadow: none;
+}
+
+.gif img{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+#quote-box{
+    width: 70%;
+    text-align: center;
+    font-family: 'Kalam', cursive;
+    align-items: center;
+}
+
+#quote-box p:hover{
+    transform: scale(1.2)
+}
+
+#quote-box h4:hover{
+    transform: scale(1.2)
+}
+
+/*-----FOOTER-----*/
+
+footer{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color:blueviolet;
+    border-top: 2px solid black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#info{
+    text-align: center;
+    align-items: center;
+}
